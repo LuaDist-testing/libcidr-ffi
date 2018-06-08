@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "libcidr-ffi"
-version = "0.1.1-1"
+version = "0.1.2-1"
 -- LuaDist source
 source = {
-  tag = "0.1.1-1",
+  tag = "0.1.2-1",
   url = "git://github.com/LuaDist-testing/libcidr-ffi.git"
 }
 -- Original source
 -- source = {
 --   url = "git://github.com/GUI/lua-libcidr-ffi.git",
---   tag = "v0.1.1"
+--   tag = "v0.1.2"
 -- }
 description = {
   summary = "libcidr bindings for Lua",
