@@ -4,6 +4,14 @@
 
 LuaJIT FFI bindings to [libcidr](http://www.over-yonder.net/~fullermd/projects/libcidr). Provides CIDR calculations for IPv4 and IPv6.
 
+## Installation
+
+The [libcidr](http://www.over-yonder.net/~fullermd/projects/libcidr) library must first be installed on your system. Then you can install lua-libcidr-ffi through [LuaRocks](https://luarocks.org):
+
+```sh
+$ luarocks install libcidr-ffi
+```
+
 ## Usage
 
 ```lua
@@ -41,3 +49,7 @@ bool = cidr.contains(big, small)
 ```
 
 This function is passed two CIDR structures describing a pair of netblocks. It then determines if the latter is wholly contained within the former. In case of failures, returns `nil` and a string describing the error.
+
+## Alternatives
+
+- [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils): A pure Lua library for CIDR comparisons in OpenResty. Provides a nice higher-level API with built-in caching. Currently lacks IPv6 support.
